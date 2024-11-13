@@ -52,44 +52,44 @@ node index.js
 ```
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Markdown Renderer with Marked</title>
     <!-- 引入 Marked 库 -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-      }
-      textarea {
-        width: 100%;
-        height: 150px;
-        margin-bottom: 20px;
-      }
-      .output {
-        border: 1px solid #ddd;
-        padding: 10px;
-        background-color: #f9f9f9;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .output {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Markdown Renderer</h1>
     <p>Type your Markdown content below:</p>
 
     <!-- Markdown 输入区域 -->
     <textarea id="markdown-input">
-      # Hello, Marked!
+# Hello, Marked!
 
-      This is a simple **Markdown** example using Marked.
+This is a simple **Markdown** example using Marked.
 
-      - Item 1
-      - Item 2
-      - Item 3
+- Item 1
+- Item 2
+- Item 3
 
-      [Visit GitHub](https://github.com)
+[Visit GitHub](https://github.com)
     </textarea>
 
     <!-- 渲染后的 HTML 输出区域 -->
@@ -97,23 +97,23 @@ node index.js
     <div id="markdown-output" class="output"></div>
 
     <script>
-      // 获取 DOM 元素
-      const input = document.getElementById('markdown-input');
-      const output = document.getElementById('markdown-output');
+        // 获取 DOM 元素
+        const input = document.getElementById('markdown-input');
+        const output = document.getElementById('markdown-output');
 
-      // 渲染 Markdown 的函数
-      function renderMarkdown() {
-        const markdownText = input.value;
-        const htmlContent = marked.parse(markdownText); // 使用 marked.parse 进行解析
-        output.innerHTML = htmlContent;
-      }
+        // 渲染 Markdown 的函数
+        function renderMarkdown() {
+            const markdownText = input.value;
+            const htmlContent = marked.parse(markdownText); // 使用 marked 进行解析
+            output.innerHTML = htmlContent;
+        }
 
-      // 初次渲染
-      renderMarkdown();
+        // 初次渲染
+        renderMarkdown();
 
-      // 监听输入事件，每次输入时重新渲染
-      input.addEventListener('input', renderMarkdown);
+        // 监听输入事件，每次输入时重新渲染
+        input.addEventListener('input', renderMarkdown);
     </script>
-  </body>
+</body>
 </html>
 ```
