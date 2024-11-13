@@ -30,7 +30,7 @@ public struct EFMarkdownOptions: OptionSet {
         self.rawValue = rawValue
     }
 
-    static public let `default` = EFMarkdownOptions(rawValue: 0)
+    static public let `default` = EFMarkdownOptions([])
     static public let sourcePos = EFMarkdownOptions(rawValue: 1 << 1)
     static public let hardBreaks = EFMarkdownOptions(rawValue: 1 << 2)
     static public let safe = EFMarkdownOptions(rawValue: 1 << 3)

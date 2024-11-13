@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
 
     public func testMarkdownFileContent() -> String {
-        if let templateURL = Bundle.main.url(forResource: "sample1", withExtension: "md") {
+        if let templateURL = Bundle.main.url(forResource: "sample4", withExtension: "md") {
             do {
                 return try String(contentsOf: templateURL, encoding: String.Encoding.utf8)
             } catch {
