@@ -8,7 +8,7 @@ DEPENDENCIES:
   - EFMarkdown (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - EFCMark
 
 EXTERNAL SOURCES:
@@ -19,6 +19,6 @@ SPEC CHECKSUMS:
   EFCMark: 78fb32ed4107c8efc640ad9d20ac31cd44ce2046
   EFMarkdown: 915ff03080b95efcc737650991397322d661f1d9
 
-PODFILE CHECKSUM: 6372d2742cd7a5195bce87d2af70e73569dc2d8e
+PODFILE CHECKSUM: 4442885ee28f2a7f24c9e4e03fad3cdf56e033ac
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.16.2
